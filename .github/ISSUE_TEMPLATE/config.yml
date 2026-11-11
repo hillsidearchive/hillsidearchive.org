@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Transcript error
+    url: https://hillsidearchive.org/archive
+    about: Open the talk on the site, click Report an error, then the line that is wrong.
+  - name: Wrong or unsupported chat answer
+    url: https://hillsidearchive.org
+    about: Use the Report button under the answer in the chat; it attaches the answer and its sources.
+  - name: Questions and ideas
+    url: https://github.com/hillsidearchive/hillsidearchive.org/discussions
+    about: Ask questions or discuss ideas before they become a concrete request.

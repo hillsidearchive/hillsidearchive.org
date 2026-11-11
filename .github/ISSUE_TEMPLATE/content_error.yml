@@ -1,0 +1,40 @@
+name: Content error
+description: A wrong date, title or attribution, or a missing source.
+title: "[Content]: "
+labels: ["content", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For an error in a talk's transcript, use the **Report an error** button on the talk's page on [hillsidearchive.org](https://hillsidearchive.org) instead. It records the exact line and lets you type the correction.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of error
+      options:
+        - Date
+        - Title or attribution
+        - Missing source
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Document URL
+      description: For a missing source, link to where it is published.
+      placeholder: https://hillsidearchive.org/...
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: What it says now
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: What it should say
+    validations:
+      required: true
